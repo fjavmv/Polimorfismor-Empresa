@@ -17,8 +17,7 @@ public class Main {
         for (Definitivo def: empresa.getEmpleadoDefinitivo()) {
             System.out.println( "Nombre de clase: " + def.getClass().getName()+ " : " + def);
             System.out.println( "Salario empleado: " + def.calcularSalario());
-
-
+//
         }
         for (Temporal tem: empresa.getEmpleadoTemporal()) {
             System.out.println( "Nombre de clase: " + tem.getClass().getName()+ " : " + tem);

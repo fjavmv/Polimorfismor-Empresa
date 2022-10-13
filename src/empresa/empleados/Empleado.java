@@ -18,7 +18,7 @@ public abstract class Empleado {
         this.promedioProductividad = promedioProductividad;
         this.numeroDeActividades = numeroDeActividades;
     }
-
+//
     public abstract double calcularSalario();
 
 
