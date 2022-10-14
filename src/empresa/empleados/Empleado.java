@@ -1,5 +1,4 @@
 package empresa.empleados;
-
 public abstract class Empleado {
     private String id;
     private String nombres;
@@ -20,7 +19,6 @@ public abstract class Empleado {
     }
 //
     public abstract double calcularSalario();
-
 
     @Override
     public String toString() {
