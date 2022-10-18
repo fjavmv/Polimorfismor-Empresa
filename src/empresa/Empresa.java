@@ -1,6 +1,7 @@
 package empresa;
 
 import empresa.empleados.Definitivo;
+import empresa.empleados.Empleado;
 import empresa.empleados.Honorarios;
 import empresa.empleados.Temporal;
 
@@ -11,10 +12,13 @@ public class Empresa {
     private ArrayList<Honorarios> empleadoPorHonorarios;
     private ArrayList<Definitivo> empleadoDefinitivo;
 
+    private  ArrayList<Empleado> empleados;
+
     public Empresa(){
         empleadoTemporal = new ArrayList<>();
         empleadoPorHonorarios = new ArrayList<>();
         empleadoDefinitivo = new ArrayList<>();
+        empleados = new ArrayList<>();
     }
 
     public void setEmpleadoTemporal(Temporal temporal) {
@@ -26,6 +30,14 @@ public class Empresa {
     }
     public void setEmpleadoDefinitivo(Definitivo definitivo){
         this.empleadoDefinitivo.add(definitivo);
+    }
+
+    public void setEmpleados(ArrayList<Empleado> empleados) {
+        this.empleados = empleados;
+    }
+
+    public ArrayList<Empleado> getEmpleados() {
+        return empleados;
     }
 
     public ArrayList<Temporal> getEmpleadoTemporal() {
